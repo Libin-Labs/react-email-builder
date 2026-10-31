@@ -1,0 +1,102 @@
+.lp-email-builder {
+  font:
+    14px/1.5 system-ui,
+    sans-serif;
+  color: #202124;
+  border: 1px solid #c9cdd2;
+  border-radius: 8px;
+  background: #f6f7f8;
+}
+.lp-email-builder * {
+  box-sizing: border-box;
+}
+.lp-email-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-bottom: 1px solid #c9cdd2;
+}
+.lp-email-toolbar label,
+.lp-email-inspector label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.lp-email-workspace {
+  display: grid;
+  grid-template-columns: minmax(210px, 280px) minmax(0, 1fr);
+  gap: 12px;
+  padding: 12px;
+}
+.lp-email-panel {
+  padding: 12px;
+  margin: 0 0 12px;
+  border: 1px solid #d5d8dc;
+  border-radius: 6px;
+  background: #fff;
+}
+.lp-email-panel h2 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.lp-email-palette,
+.lp-email-inspector {
+  display: grid;
+  gap: 8px;
+}
+.lp-email-builder button,
+.lp-email-builder input,
+.lp-email-builder textarea,
+.lp-email-builder select {
+  font: inherit;
+}
+.lp-email-builder button {
+  cursor: pointer;
+}
+.lp-email-outline {
+  padding-left: 20px;
+}
+.lp-email-outline li {
+  margin: 4px 0;
+}
+.lp-email-outline button:first-child {
+  text-align: left;
+}
+.lp-email-inspector textarea,
+.lp-email-panel textarea {
+  width: 100%;
+  min-height: 84px;
+}
+.lp-email-preview {
+  min-height: 130px;
+  padding: 16px;
+  background: #f3f5f7;
+  border: 1px dashed #9ba1a8;
+}
+.lp-email-preview-content {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 12px;
+  background: white;
+}
+.lp-email-preview-mobile .lp-email-preview-content {
+  max-width: 375px;
+}
+.lp-email-preview-tablet .lp-email-preview-content {
+  max-width: 600px;
+}
+.lp-email-preview img {
+  height: auto;
+}
+.lp-email-builder [aria-pressed='true'] {
+  outline: 2px solid #1769aa;
+}
+@media (max-width: 700px) {
+  .lp-email-workspace {
+    grid-template-columns: 1fr;
+  }
+  .lp-email-toolbar {
+    flex-wrap: wrap;
+  }
+}
